@@ -18,7 +18,7 @@ public class WordAppearancesTableModel extends AbstractTableModel{
     private String[] columnNames = {
                 "Song name", "Word number in song", "Line in song", "Verse number", 
         "Word number in verse", "Line number in verse", "Word number in line", 
-        "File path", "position"
+        "File path"
             };
     
     private ArrayList<WordAppearance> myList;
@@ -71,11 +71,7 @@ public class WordAppearancesTableModel extends AbstractTableModel{
                 break;
             case 7:
                 temp = myList.get(rowIndex).getSongPath();
-                break;
-            case 8:
-                temp = myList.get(rowIndex).getWordPosition();
                 break;    
-
         }
 
         return temp;    
